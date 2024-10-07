@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --dark-color: #1f2839;
+    --accent-color: #b69d74;
+    --minlight-color: #213a5c;
+    --background-color: #121b1d;
+    --text-color: #818181;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --border-Dark: #393939;
+    --border-light: #EEEEEE;
+    --blur-background: linear-gradient(1turn, #121b1d, rgba(31, 31, 31, 0) 700px);
+    --blur2-background: linear-gradient(1turn, #121b1d00, rgb(31, 31, 31));
+    --blur3-background: linear-gradient(1turn, #121b1d33, rgb(31 31 31));
+    /* headding */
+    --primary-font: "Playfair Display", sans-serif;
+    /* text */
+    --text-font: "Lexendy", sans-serif;
+    /* highlight */
+    --highlight-font: "Poppins", sans-serif;
+    /* arabic */
+    --Arabic-font: "Bodoni Moda", sans-serif;
+    /* Number */
+    --number-font: "Teko", sans-serif;
+}
+.Services-detailes{
+    background-color: var(--background-color);
+    padding: 60px 0 10px;
+}
+.Services-detailes .container{
+    max-width: 1200px !important;
+}
+#servisDetails-carousel{
+    position: relative;
+}
+#servisDetails-carousel button{
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    padding: 0.7rem 1rem;
+    color: var(--white-color);
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    font-size: 12px;
+    transform: scale(1) !important;
+    background: var(--background-color);
+    opacity: 0.5 !important;
+}
+
+#servisDetails-carousel button:hover{
+    color: var(--accent-color);
+    opacity: 1 !important;
+    background: var(--background-color);
+}
+#servisDetails-carousel button i::before{
+    font-weight: 900 !important;
+}
+#servisDetails-carousel .zoom {
+	background-repeat: no-repeat;
+    cursor: zoom-in;
+	filter: none !important;
+}
+#servisDetails-carousel img{
+    width: 100%;
+    transition: 0.5s;
+}
+#servisDetails-carousel img:hover {
+	opacity: 0;
+}
+.Services-detailes ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.Services-detailes ul li{
+    margin-bottom: 5px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--accent-color);
+}
+.Services-detailes ul li:hover{
+    border-bottom: 1px dashed var(--border-light);
+}
+.Services-detailes ul li a{
+    border: none;
+    font-family: var(--highlight-font);
+    display: inline-block;
+    color: var(--accent-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.Services-detailes ul li:hover a{
+    color: var(--border-light);
+}
+.Services-detailes h3{
+    margin-bottom: 20px;
+    color: var(--border-light);
+    font-family: var(--highlight-font);
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.4em;
+    letter-spacing: 0px;
+}
+.Services-detailes p{
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2em;
+    z-index: 99;
+    transition: 0.5s;
+    margin-bottom: 2rem;
+}
+.Services-detailes h6{
+    margin-bottom: 20px;
+    color: var(--border-light);
+    font-family: var(--highlight-font);
+    font-weight: 400;
+    text-transform: capitalize;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.4em;
+    letter-spacing: 0px;
+    position: relative;
+}
+.Services-detailes .title-line {
+    display: inline-block;
+    position: absolute;
+    left: 18px;
+    width: 40px;
+    height: 1px;
+    background: var(--accent-color);
+    overflow: hidden;
+}
+.Services-detailes .title-line::before{
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 4px;
+    height: 1px;
+    background-color: #212529;
+    animation: pxl_line_anim 1.5s linear infinite;
+}
+
+.Services-detailes .item ul li{
+    border: none;
+    position: relative;
+    line-height: 36px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    align-items: center;
+}
+.Services-detailes .item ul li p{
+    margin: 5px;
+}
+.Services-detailes .item ul li i{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+
+}
